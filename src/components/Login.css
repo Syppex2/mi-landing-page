@@ -1,0 +1,71 @@
+/* Login.css */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinea los elementos horizontalmente al centro */
+  justify-content: center;
+  min-height: 50vh;
+  background-color: #1a1a1d; /* Fondo oscuro */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Sombra profunda */
+  color: #66ffcc; /* Color del texto en tono neón */
+  font-size: 1em;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #ff66ff; /* Color del título en tono neón */
+  text-align: center; /* Centra el texto del título */
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Asegura que el formulario tome todo el ancho del contenedor */
+  align-items: center; /* Alinea los elementos del formulario al centro */
+}
+
+.form-container label {
+  margin-bottom: 10px;
+  color: #ff66ff; /* Color de las etiquetas en tono neón */
+  align-self: flex-start; /* Alinea las etiquetas al inicio del contenedor del formulario */
+}
+
+.form-container input {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #66ffcc;
+  border-radius: 4px;
+  background-color: #333333; /* Fondo oscuro */
+  color: #ffffff; /* Color del texto */
+  width: 100%; /* Asegura que los inputs tomen todo el ancho del contenedor */
+  box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+}
+
+.form-container .remember-me {
+  display: flex;
+  align-items: center;
+  color: #66ffcc;
+}
+
+.form-container .remember-me input {
+  margin-right: 10px;
+}
+
+.form-container button {
+  background-color: #ff66ff; /* Botón en tono neón */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(255, 102, 255, 0.5); /* Sombra brillante */
+  width: 100%; /* Asegura que el botón tome todo el ancho del contenedor */
+  text-align: center; /* Centra el texto dentro del botón */
+}
+
+.form-container button:hover {
+  background-color: #cc00cc; /* Color más oscuro al pasar el mouse */
+}

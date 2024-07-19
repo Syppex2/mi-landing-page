@@ -1,0 +1,79 @@
+/* header.css */
+.header {
+  display: flex;
+  justify-content: center; /* Centrar el contenido */
+  align-items: center;
+  padding: 10px 20px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+  box-shadow: 0 4px 8px rgba(0, 255, 234, 0.3);
+  z-index: 1000; /* Asegura que el header esté en una capa alta */
+}
+
+nav {
+  display: flex;
+  justify-content: center; /* Centrar los elementos del nav */
+  align-items: center;
+  width: 100%; /* Hacer que el nav ocupe todo el ancho */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a,
+nav ul li button { /* Aplicar estilos compartidos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00ffea; /* Color del texto en tono neón */
+  text-decoration: none;
+  transition: color 0.3s;
+  background-color: #1a1a1a; /* Fondo oscuro */
+  border: 1px solid #00ffea; /* Borde en tono neón */
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+nav ul li a:hover,
+nav ul li button:hover { /* Efecto hover compartido */
+  color: #ff00ff; /* Color del texto al pasar el mouse */
+  background-color: #333; /* Fondo más oscuro al pasar el mouse */
+}
+
+.background-selector {
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Mover a la esquina derecha */
+  display: flex;
+  gap: 10px;
+  z-index: 1001; /* Asegura que el selector de fondo esté delante */
+}
+
+.background-selector button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #1a1a1a; /* Fondo oscuro */
+  color: #00ffea; /* Color del texto */
+  border: 1px solid #00ffea; /* Borde en tono neón */
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.background-selector button:hover {
+  background-color: #333; /* Fondo más oscuro al pasar el mouse */
+  color: #ff00ff; /* Color del texto al pasar el mouse */
+}

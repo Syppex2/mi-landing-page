@@ -1,0 +1,18 @@
+.footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-text {
+    background-color: rgb(10, 9, 9); /* Fondo blanco */
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    color: rgb(202, 13, 193); /* Color del texto */
+    font-size: 0.9em; /* Tamaño del texto */
+  }
+  

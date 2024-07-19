@@ -1,0 +1,55 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #1a1a1a; /* Fondo oscuro */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 255, 234, 0.3); /* Sombra en tono neón */
+  color: #00ffea; /* Color de texto brillante */
+  font-size: 1em;
+  position: relative; /* Agregado para posicionamiento absoluto del selector de fondo */
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #ff66ff; /* Color del título en tono neón */
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Asegura que el formulario ocupe todo el ancho del contenedor */
+  max-width: 400px; /* Limita el ancho máximo del formulario */
+}
+
+.form-container label {
+  margin-bottom: 10px;
+  color: #00ffea;
+}
+
+.form-container input, .form-container select {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #00ffea;
+  border-radius: 4px;
+  background-color: #333;
+  color: #00ffea;
+}
+
+.form-container button {
+  background-color: #ff66ff; /* Botón en tono neón */
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+  background-color: #cc00cc; /* Color más oscuro al pasar el mouse */
+}

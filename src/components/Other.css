@@ -1,0 +1,20 @@
+.container {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  td {
+    max-width: 200px; /* Ajusta este valor según tus necesidades */
+  }
