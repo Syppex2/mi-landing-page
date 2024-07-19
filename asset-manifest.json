@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/mi-landing-page/static/css/main.0685090e.css",
+    "main.js": "/mi-landing-page/static/js/main.65e5e660.js",
+    "static/js/453.417bc2ff.chunk.js": "/mi-landing-page/static/js/453.417bc2ff.chunk.js",
+    "static/media/fondo3.jpg": "/mi-landing-page/static/media/fondo3.9e93cfe6805986fc4f08.jpg",
+    "static/media/fondo2.jpg": "/mi-landing-page/static/media/fondo2.3269a11372d786aad22f.jpg",
+    "static/media/fondo.jpg": "/mi-landing-page/static/media/fondo.769d7ccc883dccd5f347.jpg",
+    "static/media/fondo4.jpg": "/mi-landing-page/static/media/fondo4.8cee160cc7606c027b10.jpg",
+    "index.html": "/mi-landing-page/index.html",
+    "main.0685090e.css.map": "/mi-landing-page/static/css/main.0685090e.css.map",
+    "main.65e5e660.js.map": "/mi-landing-page/static/js/main.65e5e660.js.map",
+    "453.417bc2ff.chunk.js.map": "/mi-landing-page/static/js/453.417bc2ff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0685090e.css",
+    "static/js/main.65e5e660.js"
+  ]
+}
