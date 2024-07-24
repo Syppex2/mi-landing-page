@@ -16,18 +16,23 @@ import fondo3 from './images/fondo3.jpg';
 import fondo4 from './images/fondo4.jpg';
 import './App.css';
 import ProtectedRoute from './components/ProtectedRoute';
-import { MusicProvider } from './MusicContext'; // Importar el contexto
+import { MusicProvider } from './MusicContext';
 
 function App() {
   const [backgroundImage, setBackgroundImage] = useState(fondo);
   const [accounts, setAccounts] = useState([]);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [showDropdown, setShowDropdown] = useState(false);
   const navigate = useNavigate();
 
-  const handleBackgroundChange = (image) => {
-    setBackgroundImage(image);
-    setShowDropdown(false);
+  const backgrounds = [
+    { value: fondo, label: 'Fondo 1' },
+    { value: fondo2, label: 'Fondo 2' },
+    { value: fondo3, label: 'Fondo 3' },
+    { value: fondo4, label: 'Fondo 4' },
+  ];
+
+  const handleBackgroundChange = (event) => {
+    setBackgroundImage(event.target.value);
   };
 
   const handleSignup = (newAccount) => {
@@ -67,17 +72,14 @@ function App() {
         handleLogout={handleLogout}
       />
       <div className="background-selector">
-        <button className="dropdown-btn" onClick={() => setShowDropdown(!showDropdown)}>
-          Seleccionar Fondo
-        </button>
-        {showDropdown && (
-          <div className="dropdown-content">
-            <button onClick={() => handleBackgroundChange(fondo)}>Fondo 1</button>
-            <button onClick={() => handleBackgroundChange(fondo2)}>Fondo 2</button>
-            <button onClick={() => handleBackgroundChange(fondo3)}>Fondo 3</button>
-            <button onClick={() => handleBackgroundChange(fondo4)}>Fondo 4</button>
-          </div>
-        )}
+        <select value={backgroundImage} onChange={handleBackgroundChange}>
+          <option value="">Seleccionar Fondo</option>
+          {backgrounds.map((bg, index) => (
+            <option key={index} value={bg.value}>
+              {bg.label}
+            </option>
+          ))}
+        </select>
       </div>
       <main>
         <Routes>
@@ -126,7 +128,7 @@ function App() {
 function AppWrapper() {
   return (
     <Router>
-      <MusicProvider> {/* Envolver el componente App con MusicProvider */}
+      <MusicProvider>
         <App />
       </MusicProvider>
     </Router>
